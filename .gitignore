@@ -1,0 +1,3 @@
+# Ignore all files in assets/img and assets/fonts directories
+assets/img/*
+assets/fonts/*
