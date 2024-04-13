@@ -9,8 +9,16 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'NanumGothic';
+  src: url('/Users/kite/Desktop/new_folder/iPortfolio/assets/fonts/나눔 글꼴/나눔고딕/NanumFontSetup_OTF_GOTHIC/NanumGothic.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "NanumGothic", sans-serif;
   color: #272829;
 }
 
@@ -241,7 +249,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("/Users/kite/Desktop/new_folder/iPortfolio/assets/img/mathias-reding-fwkawB1Fyfs-unsplash.jpg") bottom center;
   background-size: cover;
 }
 
@@ -501,6 +509,11 @@ section {
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.resume .resume-item p {
+  font-style: normal;
+  font-weight: bold;
 }
 
 .resume .resume-item ul {
