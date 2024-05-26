@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'NanumGothic';
-  src: url('/Users/kite/Desktop/new_folder/iPortfolio/assets/fonts/나눔 글꼴/나눔고딕/NanumFontSetup_OTF_GOTHIC/NanumGothic.otf') format('truetype');
+  src: url('./fonts/나눔 글꼴/나눔고딕/NanumFontSetup_OTF_GOTHIC/NanumGothic.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -249,7 +249,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("/Users/kite/Desktop/new_folder/iPortfolio/assets/img/mathias-reding-fwkawB1Fyfs-unsplash.jpg") bottom center;
+  background: url("../img/A26610EB-22DC-4AE0-8CA8-BB583639E5E8_1_105_c.jpeg") bottom center;
   background-size: cover;
 }
 
@@ -385,6 +385,11 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+.goal {
+  font-size:1.2em;
+  line-height: 1.5;
+  font-weight: bold;
+}
 
 /*--------------------------------------------------------------
 # Facts
@@ -496,8 +501,17 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+.resume .resume-item h6 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "NanumGothic", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
 }

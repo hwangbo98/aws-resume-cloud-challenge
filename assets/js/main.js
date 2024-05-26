@@ -142,6 +142,18 @@
       backDelay: 2000
     });
   }
+  const typed2 = select('.typed2')
+  if (typed2) {
+    let typed_strings = typed2.getAttribute('data-typed-items')
+    typed_strings = typed_strings.split('&')
+    new Typed('.typed2', {
+      strings: typed_strings,
+      loop: true,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    });
+  }
 
   /**
    * Skills animation
@@ -242,7 +254,17 @@
       }
     }
   });
-
+  // View Counter 
+  const counter = document.querySelector(".counter-number");
+  async function updateCounter() {
+      let response = await fetch(
+          "https://65a7xnqtewa5uvlw7eil6mzfzy0mytzt.lambda-url.ap-northeast-2.on.aws/"
+      );
+      let data = await response.json();
+      counter.innerHTML = `<i class='bx bx-show'></i> Views: ${data}`;
+  }
+  updateCounter();
+// `👀 Views: ${data}`;
   /**
    * Animation on scroll
    */
