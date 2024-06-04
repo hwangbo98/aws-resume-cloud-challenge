@@ -258,7 +258,7 @@
   const counter = document.querySelector(".counter-number");
   async function updateCounter() {
       let response = await fetch(
-          "https://65a7xnqtewa5uvlw7eil6mzfzy0mytzt.lambda-url.ap-northeast-2.on.aws/"
+          "https://zxei2gmuvilrkwyxaruspqxex40uwmzc.lambda-url.ap-northeast-2.on.aws/"
       );
       let data = await response.json();
       counter.innerHTML = `<i class='bx bx-show'></i> Views: ${data}`;
